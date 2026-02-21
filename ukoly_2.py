@@ -116,3 +116,14 @@ print(absh)
 
 
 
+q = [1, 2, 3]
+print(dir(q))
+metod = "string"
+print(dir(metod))
+
+print(dir(float))
+print(dir(list))
+print(dir(bool))
+
+
+
