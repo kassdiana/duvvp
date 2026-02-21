@@ -127,3 +127,51 @@ print(dir(bool))
 
 
 
+def faktorial(n):
+    vysledek = 1
+    i = 1
+    while i <= n:
+        vysledek = vysledek * i
+        i = i + 1
+    return vysledek
+print(faktorial(13))
+
+def rekfaktorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * rekfaktorial(n - 1)
+print(rekfaktorial(13))
+
+def prumer(seznam):
+    soucet = 0
+    pocet = 0
+
+    for cislo in seznam:
+        soucet = soucet + cislo
+        pocet = pocet + 1
+    return soucet / pocet
+print(prumer([1, 2, 3, 4, 6]))
+
+def jeprvocislo(c):
+    if c < 2:
+        return False
+    i = 2
+    while i < c:
+        if c % i == 0:
+            return False
+        i = i + 1
+    return True
+
+def n_prvocislo(n):
+    vysledek = []
+    cislo = 2
+    while len(vysledek) < n:
+        if jeprvocislo(cislo):
+            vysledek.append(cislo)
+        cislo = cislo + 1
+    return vysledek
+print(n_prvocislo(13))
+
+
+
