@@ -83,3 +83,36 @@ print(id(seznam))
 retezec = "ahoj"
 retezec = "A" + retezec[1:]
 print(retezec)
+
+
+
+
+x_int = 5
+y_int = 3
+x_float = 5.5
+y_float = 2.0
+x_str = "Hello"
+y_str = "World"
+x_bool = True
+y_bool = False
+x_list = [1, 2]
+y_list = [3, 4]
+
+print(x_int + y_int) 
+print(x_int + x_float) 
+print(x_float - y_float)
+print(x_str + y_str)
+print(x_bool + y_bool)
+print(x_bool + 9) 
+print(x_list + y_list) 
+
+
+cislo = -10
+if cislo >= 0:
+     absh = cislo 
+else:
+     absh = -cislo
+print(absh)
+
+
+
